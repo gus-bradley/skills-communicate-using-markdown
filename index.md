@@ -12,3 +12,12 @@
 <b>Test code block<\b>
 <\html>
 ```
+
+``` python
+import csv
+
+with open("file.csv", newline = "") as file:
+  reader = csv.reader(file, quotechar = |)
+  for row in reader:
+    print(row)
+```
